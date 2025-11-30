@@ -46,7 +46,7 @@ export default function StoreScreen() {
 
       <View style={styles.cardContent}>
         <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.price}>${item.price}</Text>
+        <Text style={styles.price}>₹{item.price}</Text>
 
         <Pressable
           style={styles.button}
