@@ -61,7 +61,7 @@ export default function RegisterScreen() {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.content}>
-          <Text style={styles.title}>Join AstroGuide</Text>
+          <Text style={styles.title}>Join Cosmic Connection</Text>
           <Text style={styles.subtitle}>Create your cosmic profile</Text>
 
           <View style={styles.form}>

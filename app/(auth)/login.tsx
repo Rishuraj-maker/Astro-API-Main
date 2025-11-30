@@ -41,7 +41,7 @@ export default function LoginScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>AstroGuide</Text>
+        <Text style={styles.title}>Cosmic Connection</Text>
         <Text style={styles.subtitle}>Discover Your Cosmic Path</Text>
 
         <View style={styles.form}>

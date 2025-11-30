@@ -37,7 +37,7 @@ export default function ProfileScreen() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.header}>
           <Text style={styles.title}>Profile</Text>
-          <Text style={styles.subtitle}>Your AstroGuide Account</Text>
+          <Text style={styles.subtitle}>Your Cosmic Connection Account</Text>
         </View>
 
         <View style={styles.avatarContainer}>
@@ -86,7 +86,9 @@ export default function ProfileScreen() {
         </TouchableOpacity>
 
         <View style={styles.footer}>
-          <Text style={styles.footerText}>AstroGuide v1.0</Text>
+          <Text style={styles.footerText}>Cosmic v1.5</Text>
+          <Text style={styles.footerText}>Updates:</Text>
+          <Text style={styles.footerSubtext}>|| Store || Cart || Horoscope || Numerology || Feedback || Profile ||</Text>
           <Text style={styles.footerSubtext}>Discover Your Cosmic Path</Text>
         </View>
       </ScrollView>

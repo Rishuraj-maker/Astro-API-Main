@@ -7,6 +7,8 @@ import {
   Calculator,
   User,
   MessageSquare,
+  ShoppingBag,
+  ShoppingCart,
 } from 'lucide-react-native';
 
 export default function TabLayout() {
@@ -19,9 +21,7 @@ export default function TabLayout() {
     }
   }, [session, loading]);
 
-  if (loading) {
-    return null;
-  }
+  if (loading) return null;
 
   return (
     <Tabs
@@ -45,6 +45,27 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      <Tabs.Screen
+        name="store"
+        options={{
+          title: 'Store',
+          tabBarIcon: ({ color, size }) => (
+            <ShoppingBag color={color} size={size} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="cart"
+        options={{
+          title: 'Cart',
+          tabBarIcon: ({ color, size }) => (
+            <ShoppingCart color={color} size={size} />
+          ),
+        }}
+      />
+
       <Tabs.Screen
         name="horoscope"
         options={{
@@ -54,6 +75,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="numerology"
         options={{
@@ -63,6 +85,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="feedback"
         options={{
@@ -72,6 +95,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="profile"
         options={{
