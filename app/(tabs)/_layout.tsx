@@ -9,6 +9,7 @@ import {
   MessageSquare,
   ShoppingBag,
   ShoppingCart,
+  MessageCircle,
 } from 'lucide-react-native';
 
 export default function TabLayout() {
@@ -36,6 +37,8 @@ export default function TabLayout() {
         tabBarInactiveTintColor: '#94a3b8',
       }}
     >
+
+      {/* Home */}
       <Tabs.Screen
         name="index"
         options={{
@@ -46,6 +49,7 @@ export default function TabLayout() {
         }}
       />
 
+      {/* Store */}
       <Tabs.Screen
         name="store"
         options={{
@@ -56,6 +60,7 @@ export default function TabLayout() {
         }}
       />
 
+      {/* Cart */}
       <Tabs.Screen
         name="cart"
         options={{
@@ -66,6 +71,18 @@ export default function TabLayout() {
         }}
       />
 
+      {/* Chatbot */}
+      <Tabs.Screen
+        name="chat"
+        options={{
+          title: 'Chat',
+          tabBarIcon: ({ color, size }) => (
+            <MessageCircle color={color} size={size} />
+          ),
+        }}
+      />
+
+      {/* Horoscope */}
       <Tabs.Screen
         name="horoscope"
         options={{
@@ -76,6 +93,7 @@ export default function TabLayout() {
         }}
       />
 
+      {/* Numerology */}
       <Tabs.Screen
         name="numerology"
         options={{
@@ -86,6 +104,7 @@ export default function TabLayout() {
         }}
       />
 
+      {/* Feedback */}
       <Tabs.Screen
         name="feedback"
         options={{
@@ -96,6 +115,7 @@ export default function TabLayout() {
         }}
       />
 
+      {/* Profile */}
       <Tabs.Screen
         name="profile"
         options={{
@@ -105,6 +125,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
     </Tabs>
   );
 }
