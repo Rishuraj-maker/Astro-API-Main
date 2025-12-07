@@ -10,6 +10,9 @@ import {
   ShoppingBag,
   ShoppingCart,
   MessageCircle,
+  Eye,
+  Eclipse,
+  Sparkles,
 } from 'lucide-react-native';
 
 export default function TabLayout() {
@@ -38,16 +41,7 @@ export default function TabLayout() {
       }}
     >
 
-      {/* Home */}
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, size }) => (
-            <Home color={color} size={size} />
-          ),
-        }}
-      />
+
 
       {/* Store */}
       <Tabs.Screen
@@ -81,6 +75,29 @@ export default function TabLayout() {
           ),
         }}
       />
+
+       {/* Tarot */} 
+      <Tabs.Screen
+        name="tarot"
+        options={{
+          title: "Tarot",
+          tabBarIcon: ({ color, size }) => (
+            <Sparkles color={color} size={size} />
+          ),
+        }}
+      />
+
+      {/* Home */}
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <Home color={color} size={size} />
+          ),
+        }}
+      />
+
 
       {/* Horoscope */}
       <Tabs.Screen
